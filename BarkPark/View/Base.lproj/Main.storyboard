@@ -87,7 +87,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eTs-oH-uHS">
-                                <rect key="frame" x="50" y="128" width="314" height="174"/>
+                                <rect key="frame" x="50" y="128" width="314" height="237"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZV2-R4-pD6">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="48"/>
@@ -99,8 +99,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLf-Cg-EvJ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uKj-no-XCm">
                                         <rect key="frame" x="0.0" y="126" width="314" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLf-Cg-EvJ">
+                                        <rect key="frame" x="0.0" y="189" width="314" height="48"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <state key="normal" title="Register">
                                             <color key="titleColor" name="brandTurquoise"/>
@@ -122,6 +127,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="HCW-f9-TIC"/>
                     <connections>
+                        <outlet property="confirmPasswordTextfield" destination="uKj-no-XCm" id="JIs-Wv-T0X"/>
                         <outlet property="emailTextfield" destination="ZV2-R4-pD6" id="fn7-v9-Mt9"/>
                         <outlet property="passwordTextfield" destination="7yE-h0-SH3" id="o8c-Yb-cse"/>
                         <segue destination="OCz-9f-3RS" kind="show" identifier="RegisterToHome" id="vdQ-nF-A8j"/>
@@ -252,6 +258,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sVb-0o-Q2F"/>
+        <segue reference="vdQ-nF-A8j"/>
     </inferredMetricsTieBreakers>
 </document>
