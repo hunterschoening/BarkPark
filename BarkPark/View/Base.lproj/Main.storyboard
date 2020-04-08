@@ -21,13 +21,13 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYn-zw-51T">
                                         <rect key="frame" x="57" y="0.0" width="300" height="82"/>
-                                        <color key="backgroundColor" name="brandGrey"/>
+                                        <color key="backgroundColor" name="brandLightGreen"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="SjK-9D-mcb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <state key="normal" title="Register">
-                                            <color key="titleColor" name="brandTurquoise"/>
+                                            <color key="titleColor" name="brandGrey"/>
                                         </state>
                                         <connections>
                                             <segue destination="NnH-jH-flw" kind="show" id="R8s-zh-dLm"/>
@@ -35,7 +35,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VF-3j-d10">
                                         <rect key="frame" x="57" y="92" width="300" height="82"/>
-                                        <color key="backgroundColor" name="brandTurquoise"/>
+                                        <color key="backgroundColor" name="brandGreen"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="CL1-ln-QvB"/>
                                         </constraints>
@@ -51,12 +51,12 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5g-gl-cL4" customClass="CLTypingLabel" customModule="CLTypingLabel">
                                 <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="45"/>
-                                <color key="textColor" name="brandGrey"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <color key="textColor" name="brandGreen"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="brandDarkGrey"/>
+                        <color key="backgroundColor" name="brandGrey"/>
                         <constraints>
                             <constraint firstItem="oU1-iI-hGd" firstAttribute="leadingMargin" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0tD-xa-BpV"/>
                             <constraint firstItem="O5g-gl-cL4" firstAttribute="centerXWithinMargins" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Je-nI-mvD"/>
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+            <point key="canvasLocation" x="629" y="146"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="aoO-SA-zWb">
@@ -108,7 +108,7 @@
                                         <rect key="frame" x="0.0" y="189" width="314" height="48"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <state key="normal" title="Register">
-                                            <color key="titleColor" name="brandTurquoise"/>
+                                            <color key="titleColor" name="brandGreen"/>
                                         </state>
                                         <connections>
                                             <action selector="registerButtonPressed:" destination="NnH-jH-flw" eventType="touchUpInside" id="fUw-ZX-PtT"/>
@@ -130,39 +130,83 @@
                         <outlet property="confirmPasswordTextfield" destination="uKj-no-XCm" id="JIs-Wv-T0X"/>
                         <outlet property="emailTextfield" destination="ZV2-R4-pD6" id="fn7-v9-Mt9"/>
                         <outlet property="passwordTextfield" destination="7yE-h0-SH3" id="o8c-Yb-cse"/>
-                        <segue destination="OCz-9f-3RS" kind="show" identifier="RegisterToHome" id="vdQ-nF-A8j"/>
+                        <segue destination="u4F-qd-sjz" kind="show" identifier="RegisterToProfile" id="zWz-Mr-pZn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sq4-wZ-L9c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2052" y="-196"/>
+            <point key="canvasLocation" x="1468" y="-250"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tN6-nq-7gX">
+        <!--Profile View Controller-->
+        <scene sceneID="rVo-Ic-0uv">
             <objects>
-                <viewController id="OCz-9f-3RS" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZYj-dK-2dl">
+                <viewController title="Profile View Controller" id="u4F-qd-sjz" customClass="ProfileViewController" customModule="BarkPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zX0-Ds-GA5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wz5-4w-zE8">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="5av-FA-RrG"/>
-                                    <tabBarItem systemItem="more" id="QHb-OW-QOZ"/>
-                                </items>
-                            </tabBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="6Ws-bN-c4i">
+                                <rect key="frame" x="50" y="288" width="314" height="387"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPd-7O-g9R">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                        <color key="textColor" name="brandGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GaD-Z0-g2I">
+                                        <rect key="frame" x="0.0" y="150" width="314" height="237"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nickname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVd-Ej-ZF1">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog's Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YUC-jD-apk">
+                                                <rect key="frame" x="0.0" y="63" width="314" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog Breed" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5E-75-L11">
+                                                <rect key="frame" x="0.0" y="126" width="314" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jys-Ml-nlP">
+                                                <rect key="frame" x="0.0" y="189" width="314" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" name="brandGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submitButtonPressed:" destination="u4F-qd-sjz" eventType="touchUpInside" id="glp-ua-pbY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="C7H-Ro-2sU"/>
+                        <color key="backgroundColor" name="brandGrey"/>
+                        <constraints>
+                            <constraint firstItem="6Ws-bN-c4i" firstAttribute="trailingMargin" secondItem="Wqa-ZT-N5F" secondAttribute="trailing" constant="-50" id="CS2-bG-Ndh"/>
+                            <constraint firstItem="6Ws-bN-c4i" firstAttribute="leadingMargin" secondItem="Wqa-ZT-N5F" secondAttribute="leading" constant="50" id="D1Q-N7-YAA"/>
+                            <constraint firstItem="6Ws-bN-c4i" firstAttribute="topMargin" secondItem="Wqa-ZT-N5F" secondAttribute="top" constant="200" id="kc9-zX-1xk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wqa-ZT-N5F"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bfZ-RT-cOS"/>
+                    <navigationItem key="navigationItem" id="3vR-Bx-C3X"/>
+                    <connections>
+                        <outlet property="dogBreedTextfield" destination="X5E-75-L11" id="rSn-89-vQf"/>
+                        <outlet property="dogNameTextfield" destination="YUC-jD-apk" id="eRC-Pm-fW2"/>
+                        <outlet property="label" destination="rPd-7O-g9R" id="9Kh-RS-79I"/>
+                        <outlet property="nicknameTextfield" destination="VVd-Ej-ZF1" id="ND7-lR-NKf"/>
+                        <segue destination="lLr-iF-mdY" kind="show" identifier="ProfileToHome" id="r0i-8J-IXz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B3n-ud-EFf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxN-yP-6DC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3079" y="146"/>
+            <point key="canvasLocation" x="2199" y="-250"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9qi-66-97v">
@@ -173,7 +217,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="brandGrey"/>
-                        <color key="barTintColor" name="brandTurquoise"/>
+                        <color key="barTintColor" name="brandGreen"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" name="brandGrey"/>
                         </textAttributes>
@@ -185,7 +229,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5VN-OY-maz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-200" y="146"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Zwq-k5-nty">
@@ -200,13 +244,13 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y9R-ph-3v5">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="48"/>
-                                        <color key="backgroundColor" name="brandGrey"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="07h-W0-KqA">
                                         <rect key="frame" x="0.0" y="63" width="314" height="48"/>
-                                        <color key="backgroundColor" name="brandGrey"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
@@ -214,7 +258,7 @@
                                         <rect key="frame" x="0.0" y="126" width="314" height="48"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <state key="normal" title="Log In">
-                                            <color key="titleColor" name="brandTurquoise"/>
+                                            <color key="titleColor" name="brandGreen"/>
                                         </state>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="kbz-hM-Gjy" eventType="touchUpInside" id="jNl-eu-jXc"/>
@@ -223,7 +267,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" name="brandDarkGrey"/>
+                        <color key="backgroundColor" name="brandGrey"/>
                         <constraints>
                             <constraint firstItem="CpN-tl-F07" firstAttribute="trailingMargin" secondItem="sao-oc-RNp" secondAttribute="trailing" constant="-50" id="3nK-D4-vKc"/>
                             <constraint firstItem="CpN-tl-F07" firstAttribute="leadingMargin" secondItem="sao-oc-RNp" secondAttribute="leading" constant="50" id="pi4-eH-Kj8"/>
@@ -235,17 +279,134 @@
                     <connections>
                         <outlet property="emailTextfield" destination="y9R-ph-3v5" id="TG6-J2-HwG"/>
                         <outlet property="passwordTextfield" destination="07h-W0-KqA" id="tQc-2S-smF"/>
-                        <segue destination="OCz-9f-3RS" kind="show" identifier="LoginToHome" id="sVb-0o-Q2F"/>
+                        <segue destination="lLr-iF-mdY" kind="show" identifier="LoginToHome" id="7uu-LK-UH2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2Y-Dq-NCc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2051" y="510"/>
+            <point key="canvasLocation" x="1836" y="510"/>
+        </scene>
+        <!--People Tab View Controller-->
+        <scene sceneID="6if-m1-Xnn">
+            <objects>
+                <viewController title="People Tab View Controller" id="3Bw-ed-ERB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3F2-ds-4wy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="brandGrey"/>
+                        <viewLayoutGuide key="safeArea" id="XkJ-nd-OL3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="People" image="person.3.fill" catalog="system" id="nXS-lb-Sta"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XaN-gz-OCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3929" y="892"/>
+        </scene>
+        <!--Chat Tab View Controller-->
+        <scene sceneID="mib-zI-Nhw">
+            <objects>
+                <viewController title="Chat Tab View Controller" id="M5p-rX-clS" customClass="ChatTabViewController" customModule="BarkPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GzV-4t-MLt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IBg-Sp-Zhe">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yVu-pp-bj5">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="665"/>
+                                        <color key="backgroundColor" name="brandGrey"/>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXN-Gf-qDU">
+                                        <rect key="frame" x="0.0" y="665" width="414" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDs-PK-0MJ">
+                                                <rect key="frame" x="371.5" y="17" width="20.5" height="22"/>
+                                                <color key="tintColor" name="brandGrey"/>
+                                                <state key="normal" image="paperplane.fill" catalog="system"/>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U3a-GT-Yr9">
+                                                <rect key="frame" x="12" y="12" width="337.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="U3a-GT-Yr9" firstAttribute="trailingMargin" secondItem="KDs-PK-0MJ" secondAttribute="leading" constant="-30" id="1lH-Ra-bpm"/>
+                                            <constraint firstItem="KDs-PK-0MJ" firstAttribute="trailingMargin" secondItem="NXN-Gf-qDU" secondAttribute="trailing" constant="-30" id="Z4n-Ca-3DZ"/>
+                                            <constraint firstItem="U3a-GT-Yr9" firstAttribute="leftMargin" secondItem="NXN-Gf-qDU" secondAttribute="left" constant="20" id="cxs-Fy-avB"/>
+                                            <constraint firstItem="U3a-GT-Yr9" firstAttribute="topMargin" secondItem="NXN-Gf-qDU" secondAttribute="top" constant="20" id="o7o-oa-beI"/>
+                                            <constraint firstItem="KDs-PK-0MJ" firstAttribute="topMargin" secondItem="NXN-Gf-qDU" secondAttribute="top" constant="25" id="rk5-RH-xVB"/>
+                                            <constraint firstAttribute="height" constant="60" id="xdd-O2-Opg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="brandGrey"/>
+                        <constraints>
+                            <constraint firstItem="IBg-Sp-Zhe" firstAttribute="leadingMargin" secondItem="pYp-7B-eYS" secondAttribute="leading" id="ik7-TR-cJ1"/>
+                            <constraint firstItem="IBg-Sp-Zhe" firstAttribute="topMargin" secondItem="pYp-7B-eYS" secondAttribute="top" id="qsS-SD-7D1"/>
+                            <constraint firstItem="IBg-Sp-Zhe" firstAttribute="trailingMargin" secondItem="pYp-7B-eYS" secondAttribute="trailing" id="rPh-xP-zvU"/>
+                            <constraint firstItem="IBg-Sp-Zhe" firstAttribute="bottomMargin" secondItem="pYp-7B-eYS" secondAttribute="bottom" id="ynK-Dx-G5e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pYp-7B-eYS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="message.fill" catalog="system" id="Z5Q-x7-kER"/>
+                    <connections>
+                        <outlet property="messageTextfield" destination="U3a-GT-Yr9" id="q0F-PM-7vz"/>
+                        <outlet property="tableView" destination="yVu-pp-bj5" id="BPw-tJ-rJp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1L-ZV-COI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3928.985507246377" y="-560.49107142857144"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="YK9-7z-RoE">
+            <objects>
+                <tabBarController id="lLr-iF-mdY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="A3m-cq-nte"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U1B-KN-19j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="brandGreen"/>
+                        <color key="selectedImageTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="M5p-rX-clS" kind="relationship" relationship="viewControllers" id="Tof-iO-632"/>
+                        <segue destination="3Bw-ed-ERB" kind="relationship" relationship="viewControllers" id="rPr-7C-rX0"/>
+                        <segue destination="Z7Q-29-MSR" kind="relationship" relationship="viewControllers" id="4lY-h6-zLP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PhH-39-KR7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3008" y="163"/>
+        </scene>
+        <!--More Tab View Controller-->
+        <scene sceneID="ttd-zd-13J">
+            <objects>
+                <viewController title="More Tab View Controller" id="Z7Q-29-MSR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xp4-Rn-lE1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="brandGrey"/>
+                        <viewLayoutGuide key="safeArea" id="YPm-Xd-WR2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="gUZ-Dc-4Jc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bbu-V4-5vz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3929" y="163"/>
         </scene>
     </scenes>
     <resources>
-        <namedColor name="brandDarkGrey">
-            <color red="0.22352941176470589" green="0.24313725490196078" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="message.fill" catalog="system" width="64" height="56"/>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
+        <image name="person.3.fill" catalog="system" width="71" height="34"/>
+        <namedColor name="brandGreen">
+            <color red="0.12156862745098039" green="0.6705882352941176" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="brandGrey">
             <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -253,11 +414,11 @@
         <namedColor name="brandGrey">
             <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="brandTurquoise">
-            <color red="0.0" green="0.67843137254901964" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="brandLightGreen">
+            <color red="0.3843137254901961" green="0.82352941176470584" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vdQ-nF-A8j"/>
+        <segue reference="r0i-8J-IXz"/>
     </inferredMetricsTieBreakers>
 </document>
